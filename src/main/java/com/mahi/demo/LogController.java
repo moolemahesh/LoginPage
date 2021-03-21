@@ -14,7 +14,7 @@ public class LogController {
 	}	
 	@RequestMapping(value="/login", method= RequestMethod.POST)
 	public String showlogg(@RequestParam String maj , @RequestParam String upass) {
-		
+		System.out.println("testing");
 		String status ="";
 		if(maj.equals("mahi") && upass.equals("mahi")) {
 			status= "success";
